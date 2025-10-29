@@ -50,7 +50,7 @@ async function bootstrap() {
     origin: (origin, callback) => {
       const allowedOrigins = [
         'https://uydatalim.uzedu.uz',
-        'http://localhost:3000',
+        'https://t-uydatalim.uzedu.uz',
         'http://localhost:3001',
       ];
 
@@ -69,6 +69,6 @@ async function bootstrap() {
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
   });
 
-  await app.listen(parseInt(process.env.PORT) || 8000, '0.0.0.0');
+  await app.listen(parseInt(process.env.PORT) || 8001, '0.0.0.0');
 }
 bootstrap();
